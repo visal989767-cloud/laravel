@@ -49,8 +49,8 @@ ENV PORT=80 \
     APP_DEBUG=false \
     DB_CONNECTION=mysql \
     LOG_CHANNEL=stderr \
-    CACHE_STORE=database \
-    SESSION_DRIVER=database \
+    CACHE_STORE=array \
+    SESSION_DRIVER=array \
     QUEUE_CONNECTION=sync
 
 USER www-data
