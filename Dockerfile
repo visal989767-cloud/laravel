@@ -45,8 +45,10 @@ RUN setcap CAP_NET_BIND_SERVICE=+eip /usr/local/bin/frankenphp \
     && chown -R www-data:www-data /config/caddy /data/caddy
 
 ENV PORT=80 \
+    APP_NAME=UMVISAL-SV34 \
     APP_ENV=production \
     APP_DEBUG=false \
+    APP_URL=https://app-fawn-three-67.vercel.app \
     DB_CONNECTION=mysql \
     LOG_CHANNEL=stderr \
     CACHE_STORE=array \
